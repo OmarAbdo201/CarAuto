@@ -1,0 +1,76 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align:  center;
+    background-image: url(Imgs/background-animation.png);
+}
+
+#first-word{
+    color: rgb(97, 159, 35);
+}
+
+#testimonials-container{
+    width: 600px;
+    padding: 30px;
+    margin: 0 auto;
+    border-radius: 20px;
+    box-shadow: 0 0 16px 8px rgba(0, 0, 0, .2);
+}
+
+#testimonials-container p:first-of-type{
+    text-align: start;
+    position: relative;
+
+
+    padding-left: 20px;
+    opacity: .7;
+    color: aliceblue;
+}
+
+#testimonials-container p:first-of-type::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 5px;
+    background-color: rgb(185, 212, 157);
+    margin-right: 10px;
+}
+
+#testimonials-container img{
+    height: 150px;
+    display: block;
+    border-radius: 20px;
+}
+
+.test-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttons{
+    margin: 20px;
+}
+
+.buttons #next,#pervious{
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.buttons #next:hover,#pervious:hover{
+    background-color: rgb(226, 210, 185);
+}
+
+#testimonials-container p:last-of-type{
+    background-color: rgb(185, 212, 157);
+    border-radius: 20px;
+    padding: 2px;
+}
+
+
+#testimonials-container h3{
+    background-color: rgb(185, 212, 157);
+    border-radius: 20px;
+    padding: 2px;
+}
